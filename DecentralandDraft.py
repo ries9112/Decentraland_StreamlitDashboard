@@ -5,16 +5,16 @@ Spyder Editor
 This is a temporary script file.
 """
 
+import rpy2
+import rpy2.robjects as robjects
+import rpy2.robjects.packages as rpackages
+from rpy2.robjects.vectors import StrVector
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 from datetime import datetime
 from statistics import mean
 import altair as alt
-import rpy2
-import rpy2.robjects as robjects
-import rpy2.robjects.packages as rpackages
-from rpy2.robjects.vectors import StrVector
 
 packageNames = ('tidyverse')
 utils = rpackages.importr('utils')
